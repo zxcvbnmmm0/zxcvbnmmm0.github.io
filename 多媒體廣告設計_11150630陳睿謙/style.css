@@ -1,0 +1,117 @@
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3fbe8;
+  color: #333;
+}
+
+/* 🔷 標題區塊：變大字 + 置中 */
+header {
+  background-color: #7db46c;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+header h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 20px;
+  margin: 0;
+}
+
+/* 🔷 導覽列 */
+nav {
+  background-color: #5c8a54;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+}
+
+nav li {
+  margin: 0 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* 🔷 主要內容 */
+main {
+  padding: 40px 20px;
+}
+
+/* 🔷 內文區塊置中顯示 */
+.intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 50px auto;
+}
+
+.intro h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.intro p {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* 🔷 圖片展示區 */
+.gallery h2, .carousel-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.image-row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.image-row img {
+  width: 30%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+/* 🔷 淡入動畫 */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* 🔷 輪播圖樣式 */
+.carousel-item img {
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.carousel-section {
+  margin-bottom: 50px;
+}
+
+/* 🔷 頁尾 */
+footer {
+  background-color: #5c8a54;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
